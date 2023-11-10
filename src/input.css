@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+:root {
+    --card-min: 20rem;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+
+.card-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr));
+    place-items: center;
+}
+
+.card {
+    width: clamp(var(--card-min), 100%, 30rem);
+    aspect-ratio: 1.8/2;
+    @apply bg-white rounded-lg shadow-lg grid content-end transition-all;
+}
+
+.card:hover,
+.card:active,
+.card:focus {
+    transform: scale(101%);
+    @apply shadow-2xl;
+}
+
+
+@media screen and (width >= 640px) {
+    :root {
+        --card-min: 20rem;
+    }
+}
