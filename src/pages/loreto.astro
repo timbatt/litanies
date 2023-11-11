@@ -1,0 +1,19 @@
+---
+import PostLayout from '../layouts/PostLayout.astro';
+import LitanyRenderer from "../components/LitanyRenderer.astro";
+import litanyData from '../json/loreto.json';
+---
+
+<PostLayout title="The Litany of Loreto" heroImg="/img/loreto_hero.jpg">
+	<LitanyRenderer data={ litanyData } />
+	<p>
+		O holy Mother of God.	That we may be made worthy of the promises of Christ.<br>
+		Let us pray. <br>
+		Grant, we beseech thee, O Lord God, that we, your servants,
+		may enjoy perpetual health of mind and body; 
+		and by the glorious intercession of the Blessed Mary, ever Virgin, 
+		may be delivered from present sorrow, 
+		and obtain eternal joy. Through Christ our Lord. 
+		Amen.
+	</p>
+</PostLayout>

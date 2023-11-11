@@ -1,0 +1,33 @@
+---
+interface Props {
+    data: Array<object>;
+}
+
+const { data } = Astro.props;
+---
+
+{data.map(section => (
+<div>
+    {section.prayers && (
+        // For prayers with the same response
+        <>
+        {section.prayers.map(p => (
+            <div class='mb-6'>
+                <p>{p}</p>
+                <b>{section.res}</b>
+            </div>
+        ))}
+        </>
+    )}
+
+    
+    {section.prayer && (
+        // For prayers with the same response
+        <div class='mb-6'>
+            <p>{ section.prayer }</p>
+            <b>{section.res}</b>
+        </div>
+    )}
+    <br>
+</div>
+))}

@@ -1,0 +1,97 @@
+[
+    {
+        "prayer": "Lord have mercy",
+        "res": "Christ, have mercy"
+    },
+
+    {
+        "prayer": "Lord have mercy on us. Christ hear us.",
+        "res": "Christ graciously hear us."
+    },
+
+    {
+        "prayers": [
+            "God, the Father of heaven",
+            "God the Son, Redeemer of the world",
+            "God the Holy Spirit",
+            "Holy Trinity, one God"
+        ],
+        "res": "Have mercy on us"
+    },
+
+
+    {
+        "res": "Pray for us",
+        "prayers": [
+            "Holy Mary",
+            "Holy Mother of God",
+            "Holy Virgin of virgins",
+            "Mother of Christ",
+            "Mother of the Church",
+            "Mother of Mercy",
+            "Mother of Divine Grace",
+            "Mother of Hope",
+            "Mother most pure",
+            "Mother most chaste",
+            "Mother inviolate",
+            "Mother undefiled",
+            "Mother most amiable",
+            "Mother admirable",
+            "Mother of good counsel",
+            "Mother of our Creator",
+            "Mother of our Savior",
+            "Virgin most prudent",
+            "Virgin most venerable",
+            "Virgin most renowned",
+            "Virgin most powerful",
+            "Virgin most merciful",
+            "Virgin most faithful",
+            "Mirror of justice",
+            "Seat of wisdom",
+            "Cause of our joy",
+            "Spiritual vessel",
+            "Vessel of honour",
+            "Singular vessel of devotion",
+            "Mystical rose",
+            "Tower of David",
+            "Tower of ivory",
+            "House of gold",
+            "Ark of the covenant",
+            "Gate of heaven",
+            "Morning star",
+            "Health of the sick",
+            "Refuge of sinners",
+            "Solace of migrants",
+            "Comfort of the afflicted",
+            "Help of Christians",
+            "Queen of Angels",
+            "Queen of Patriarchs",
+            "Queen of Prophets",
+            "Queen of Apostles",
+            "Queen of Martyrs",
+            "Queen of Confessors",
+            "Queen of Virgins",
+            "Queen of all Saints",
+            "Queen conceived without original sin",
+            "Queen assumed into Heaven",
+            "Queen of the most Holy Rosary",
+            "Queen of families",
+            "Queen of peace"
+        ]
+    },
+
+    {
+        "prayer": "Lamb of God, who takes away the sins of the world",
+        "res": "Spare us, O Lord."
+    },
+
+    {
+        "prayer": "Lamb of God, who takes away the sins of the world",
+        "res": "Graciously hear us, O Lord."
+    },
+
+    {
+        "prayer": "Lamb of God, who takes away the sins of the world",
+        "res":  "Have mercy on us."
+    }
+]

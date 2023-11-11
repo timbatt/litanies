@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const { title, heroImg } = Astro.props;
+---
+
+<Layout title={ title } heroImg={ heroImg }>
+	<main class='post py-20 px-5 grid place-content-center text-center'>
+		<article class="max-w-screen-md">
+			<slot/>
+		</article>
+	</main>
+</Layout>

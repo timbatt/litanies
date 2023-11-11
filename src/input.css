@@ -6,10 +6,28 @@
     --card-min: 20rem;
 }
 
+html {
+    font-size: 1.25rem;
+}
+
 body {
     background-color: #fafafa;
 }
 
+.hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero__overlay {
+    z-index: 1;
+    background: linear-gradient(to top, #0008 1%,#fff0);
+}
+
+.hero__content {
+    z-index: 2;
+}
 
 .card-container {
     display: grid;
@@ -19,16 +37,74 @@ body {
 }
 
 .card {
+    @apply bg-white rounded-lg shadow-lg grid content-end relative;
     width: clamp(var(--card-min), 100%, 30rem);
     aspect-ratio: 1.8/2;
-    @apply bg-white rounded-lg shadow-lg grid content-end transition-all;
+    color: white;
+    background-size: cover;
+    transition: all 500ms;
+    overflow: hidden;
 }
 
-.card:hover,
-.card:active,
-.card:focus {
+.card__content {
+    z-index: 2;
+}
+
+.card:hover {
+    @apply shadow-xl;
     transform: scale(101%);
-    @apply shadow-2xl;
+}
+
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.card__overlay {
+    background: linear-gradient(to top, #000a 1%,#fff0);
+    transition: all 500ms;
+}
+
+.card__overlay:hover,
+.card__overlay:active,
+.card__overlay:focus {
+    background-size: 200% 200%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+.post h1 {
+    font-size: 3rem;
+}
+
+
+.post h2 {
+    font-size: 2.5rem;
+}
+
+
+.post h3 {
+    font-size: 2rem;
+}
+
+
+.post h4 {
+    font-size: 1.5rem;
+}
+
+.post h5 {
+    font-size: 1.25rem;
 }
 
 

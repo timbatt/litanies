@@ -3,14 +3,16 @@ interface Props {
 	title: string;
 	href?: string;
 	description?: string;
+	img?: string;
 }
 
-const { href, title, description } = Astro.props;
+const { href, title, description, img } = Astro.props;
 ---
 
-<a class='card' href={ href }>
+<a class='card' href={ href } style={ `background-image: url(${ img })` }>
+	<div class='card__overlay overlay'></div>
 	<div class='card__content p-5'>
-		<h2>{ title }</h2>
+		<h2 class='font-bold text-2xl'>{ title }</h2>
 		<p>{ description }</p>
 	</div>
 </a>

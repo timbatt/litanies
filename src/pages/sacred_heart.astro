@@ -1,0 +1,11 @@
+---
+import PostLayout from '../layouts/PostLayout.astro';
+import LitanyRenderer from "../components/LitanyRenderer.astro";
+import litanyData from '../json/sacred_heart.json';
+
+
+---
+
+<PostLayout title="The Litany of the Sacred Heart of Jesus">
+	<LitanyRenderer data={ litanyData } />
+</PostLayout>
