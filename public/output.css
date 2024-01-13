@@ -550,10 +550,6 @@ video {
   height: 10vw;
 }
 
-.h-\[25vw\] {
-  height: 25vw;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
@@ -592,6 +588,11 @@ video {
   padding: 1.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -626,7 +627,7 @@ video {
 }
 
 :root {
-  --card-min: 20rem;
+  --card-min: min(250px, 100%);
 }
 
 html {
@@ -641,6 +642,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 25vw;
 }
 
 .hero__overlay {
