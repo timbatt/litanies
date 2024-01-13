@@ -17,8 +17,9 @@ body {
 .hero {
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center top;
     position: relative;
-    min-height: 25vh;
+    min-height: 50vh;
 }
 
 .hero__overlay {
