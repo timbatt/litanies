@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: 'https://zvsoftware.github.io/projects',
+  site: 'https://jammincoder.github.io',
   base: '/litanies',
   server: {
     port: 8000
