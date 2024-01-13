@@ -1,0 +1,63 @@
+[
+    {
+        "prayer": "Lord, have mercy on us.",
+        "res": "Lord, have mercy on us."
+    },
+
+    {
+        "res": "Have mercy on us",
+        "prayers": [
+            "God the Father of Heaven",
+            "God the Son, Redeemer of the world",
+            "God the Holy Spirit",
+            "Holy Trinity, One God",
+            "Divine Essence, one true God",
+            "Spirit of truth and wisdom",
+            "Spirit of holiness and justice",
+            "Spirit of understanding and counsel",
+            "Spirit of love and joy",
+            "Spirit of peace and patience",
+            "Spirit of longanimity and meekness",
+            "Spirit of benignity and goodness",
+            "Love substantial of the Father and the Son",
+            "Love and life of saintly souls",
+            "Fire ever burning",
+            "Living water to quench the thirst of hearts"
+        ]
+    },
+
+    {
+        "res": "Deliver us, O Holy Spirit",
+        "prayers": [
+            "From all evil",
+            "From all impurity of soul and body",
+            "From all gluttony and sensuality",
+            "From all attachments to the things of the earth",
+            "From all hypocrisy and pretense",
+            "From all imperfections and deliberate faults",
+            "From our own will",
+            "From slander",
+            "From deceiving our neighbors",
+            "From our passions and disorderly appetites",
+            "From our inattentiveness to Thy holy inspirations",
+            "From despising little things",
+            "From debauchery and malice",
+            "From love of comfort and luxur",
+            "From wishing to seek or desire anything other than Thee",
+            "From everything that displeases Thee"
+        ]
+    },
+
+    {
+        "prayer": "Most loving Father",
+        "res": "Forgive us"
+    },
+
+
+    {
+        "prayer": "Divine Word",
+        "res": "Have pity on us"
+    }
+]
+
+

@@ -13,8 +13,8 @@ const { data } = Astro.props;
         <>
         {section.prayers.map(p => (
             <div class='mb-6'>
-                <p>{p}</p>
-                <b>{section.res}</b>
+                <p class='prayer'>{p}</p>
+                <b class='response'>{section.res}</b>
             </div>
         ))}
         </>
@@ -22,10 +22,10 @@ const { data } = Astro.props;
 
     
     {section.prayer && (
-        // For prayers with the same response
+        // For an individual prayer
         <div class='mb-6'>
-            <p>{ section.prayer }</p>
-            <b>{section.res}</b>
+            <p class='prayer'>{ section.prayer }</p>
+            <b class='response'>{section.res}</b>
         </div>
     )}
     <br>
