@@ -2,9 +2,10 @@
 import PostLayout from '../layouts/PostLayout.astro';
 import LitanyRenderer from "../components/LitanyRenderer.astro";
 import litanyData from '../json/loreto.json';
+const BASE = import.meta.env.BASE_URL;
 ---
 
-<PostLayout title="The Litany of Loreto" heroImg="/litanies/img/loreto_hero.jpg">
+<PostLayout title="The Litany of Loreto" heroImg=`${ BASE }/img/loreto_hero.jpg`>
 	<LitanyRenderer data={ litanyData } />
 	<p>
 		Pray for us O holy Mother of God.<br>

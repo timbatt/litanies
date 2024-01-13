@@ -6,6 +6,7 @@ interface Props {
 }
 
 const { title, description, heroImg } = Astro.props;
+const BASE = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -14,9 +15,9 @@ const { title, description, heroImg } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="A collection of the holy litanies." />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/litanies/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href=`${ BASE }/favicon.svg` />
 		<meta name="generator" content={Astro.generator} />
-		<link rel="stylesheet" href="/litanies/output.css">
+		<link rel="stylesheet" href=`${ BASE }/output.css`>
 		<title>{title}</title>
 	</head>
 	<body>

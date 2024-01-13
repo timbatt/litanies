@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+const BASE = import.meta.env.BASE_URL;
 ---
 
 <Layout title="The Litanies">
@@ -9,9 +10,9 @@ import Card from '../components/Card.astro';
 
 	<main class='py-20 px-5 flex justify-center'>
 		<section class='card-container max-w-screen-xl w-[100%]'>
-			<Card href='/litanies/sacred_heart' title='Litany of the Sacred Heart of Jesus' img='/litanies/img/sacred_heart.png' />
-			<Card href='/litanies/loreto' title='Litany of Loreto' img='/litanies/img/mary.jpg' />
-			<Card href='/litanies/holy_spirit' title='Litany of the Holy Spirit' img='/litanies/img/holy_spirit.jpg' />
+			<Card href=`${ BASE }/sacred_heart` title='Litany of the Sacred Heart of Jesus' img=`${ BASE }/img/sacred_heart.png` />
+			<Card href=`${ BASE }/loreto` title='Litany of Loreto' img=`${ BASE }/img/mary.jpg` />
+			<Card href=`${ BASE }/holy_spirit` title='Litany of the Holy Spirit' img=`${ BASE }/img/holy_spirit.jpg` />
 		</section>
 	</main>
 </Layout>
