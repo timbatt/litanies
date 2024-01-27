@@ -1,0 +1,14 @@
+---
+interface Props {
+    content: String,
+    res: String,
+}
+
+const { content, res } = Astro.props;
+
+---
+
+<div class='mb-6'>
+    <p class='prayer'>{ content }</p>
+    <b class='response'>{ res }</b>
+</div>

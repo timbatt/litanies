@@ -1,33 +1,25 @@
 ---
+import Prayer from "./Prayer.astro";
+import Prayers from "./Prayers.astro";
+import type { PrayerType, PrayersType } from "../types.mts";
+
 interface Props {
-    data: Array<object>;
+    data: Array<PrayerType> | Array<PrayersType>;
 }
+
 
 const { data } = Astro.props;
 ---
 
 {data.map(section => (
-<div>
-    {section.prayers && (
-        // For prayers with the same response
-        <>
-        {section.prayers.map(p => (
-            <div class='mb-6'>
-                <p class='prayer'>{p}</p>
-                <b class='response'>{section.res}</b>
-            </div>
-        ))}
-        </>
-    )}
 
-    
-    {section.prayer && (
-        // For an individual prayer
-        <div class='mb-6'>
-            <p class='prayer'>{ section.prayer }</p>
-            <b class='response'>{section.res}</b>
-        </div>
-    )}
+<div>
+    { section.prayers 
+        ? <Prayers content={ section.prayers } res={ section.res }/>
+        : <Prayer content={ section.prayer } res={ section.res }/>
+    }
     <br>
 </div>
+
 ))}
+../types.mts

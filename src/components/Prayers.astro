@@ -1,0 +1,16 @@
+---
+import Prayer from "./Prayer.astro";
+
+interface Props {
+    content: Array<String>,
+    res: String,
+}
+
+const { content, res } = Astro.props;
+---
+
+{
+content.map(prayerText => (    
+    <Prayer content={ prayerText } res={ res }/>
+))
+}
