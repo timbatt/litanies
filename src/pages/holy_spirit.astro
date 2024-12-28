@@ -2,11 +2,12 @@
 import PostLayout from '../layouts/PostLayout.astro';
 import LitanyRenderer from "../components/LitanyRenderer.astro";
 import litanyData from '../json/holy_spirit.json';
+const BASE = import.meta.env.BASE_URL;
 
 
 ---
 
-<PostLayout title="The Litany of the Sacred Heart of Jesus">
+<PostLayout title="The Litany of the Holy Spirit" heroImg={`${ BASE }/img/holy_spirit.jpg`}>
 	<LitanyRenderer data={ litanyData } />
 	<p>
 		Holy and divine Spirit,
